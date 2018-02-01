@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <title>Index</title>
+    <script src="firstjs1.js"></script>
+	<style>
+			.bod{
+				background-image:url('city.jpg');
+				background-repeat:no-repeat;
+			}
+			.for1[type=text]{
+				font-family: sans-serif;
+				font-weight: 300;
+				background: rgb(240, 240, 240);
+				font-size: 16px;
+        padding:10px 10px 10px 10px;
+        margin:10px 10px 10px 10px;
+        font-style:normal;
+        opacity: 0.8;
+        outline:none;
+        cursor: pointer;
+      }
+        .for2[type=submit]{
+  				font-family: sans-serif;
+  				font-weight: 300;
+          font-size:16px;
+  				background: rgb(240, 240, 240);
+  				font-size: 16px;
+          opacity: 0.8;
+          outline:none;
+          cursor: pointer;
+
+			}
+      .for3[type=password]{
+        font-family: sans-serif;
+				font-weight: 300;
+				background: rgb(240, 240, 240);
+				font-size: 16px;
+        padding:10px 10px 10px 10px;
+        margin:10px 10px 10px 10px;
+        font-style:normal;
+        opacity: 0.8;
+        outline:none;
+        cursor: pointer;
+
+      }
+      .for4{
+      text-align: center;
+      }
+    </style>
+</head>
+
+
+<body class="bod">
+
+
+    <p>Please enter the follwing details</p>
+
+   <form class="for4" action="html7.html" method="post" onsubmit="return check_info()">
+			 Name:    <input class="for1" type="text" name="fn" placeholder="name" id="fn">
+			 Password:<input class="for3" type="password" name="pwd" placeholder="password" id="pwd">
+              <input type="submit" value="Submit" class="for2">
+    </form>
+
+</body>
+
+
+</html>
