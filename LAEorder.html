@@ -1,0 +1,61 @@
+<html>
+  <head>
+      <title>Paas Services</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav navbar-inverse navbar-collapse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="file:///C:/Users/shrutbha/gitrepoEX/PaaSservice.html">PaaS service</a>
+          </div>
+            <ul class="nav navbar-nav">
+                <li><a  href="file:///C:/Users/shrutbha/gitrepoEX/index.html">Home</a></li>
+             </ul>
+          </div>
+      </nav>
+    </div>
+
+   <div class="container">
+     <div class="jumbotron">
+            <form class="form-inline"action="ordernumber.html" target="_blank">
+                <div class="form-group">
+                    <label class="control-label col-lg-4" for="VLAEname"><span>VLAE Name:</span></label>
+                      <div class="col-sm-10">
+                      <input type="text" class="form-control" id="VLAEname" placeholder="VLAE Name">
+                      <p style="font-size:12px;color:rgb(200, 200, 200)">
+                        Please name your vLAE. The same name will be used to order Applications.
+                        vLAE Name must be:
+                        - 3 to 16 characters.
+                        - Begin with an alphabetic character.
+                        - Only alphanumeric characters.
+                        e.g. abc or abc12345
+                      </p>
+                    </div>
+                </div>
+            <div class="form-group">
+              <label type="control-label col-lg-4" for="cluster">Cluster :</label>
+              <div class="col-sm-10">
+                <select class="form-control " name="Cluster">
+                  <option value="None">------</option>
+                  <option value="Cisco IT">Cisco IT</option>
+                  <option value="GIS">GIS</option>
+                </select>
+              </div>
+          </div>
+          <div class="form-group">
+            <label type="control-label col-lg-4" for="Mailer ">Group Mailer Alias :</label>
+            <div class="col-sm-10">
+             <input type="text" class="form-control" id="mailer" placeholder="Mailer alias">
+             <p style="font-size:12px;color:rgb(200, 200, 200)"> Enter mailer alias without '@cisco.com'</p>
+          </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
