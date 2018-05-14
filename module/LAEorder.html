@@ -1,0 +1,114 @@
+<html>
+  <head>
+      <title>Paas Services</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <style>
+      .inputElement
+      {
+        margin-top: 20px;
+      }
+      label{
+        position: absolute;
+      }
+      input{
+        margin-left: 15em;
+        padding: 5px;
+        margin-bottom: 1em;
+      }
+      select{
+          margin-left: 15em;
+          padding: 5px;
+          margin-bottom: 1em;
+      }
+      textarea{
+        margin-left: 15em;
+        padding: 5px;
+        margin-bottom: 1em;
+      }
+      button{
+        margin-left: 15em;
+        padding: 5px;
+        margin-top:2em;
+      }
+      p{
+
+      }
+      </style>
+      <script type="text/javascript" src="validateLAEOrder.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav navbar-inverse navbar-collapse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="file:///C:/Users/shrutbha/gitrepoEX/PaaSservice.html">PaaS service</a>
+          </div>
+            <ul class="nav navbar-nav">
+                <li><a  href="file:///C:/Users/shrutbha/gitrepoEX/index.html">Home</a></li>
+             </ul>
+          </div>
+      </nav>
+    </div>
+
+   <div class="container inputElement">
+            <form action="ordernumber.html" target="_blank" >
+              <div>
+                    <label for="VLAEname"><span>VLAE Name:</span></label><input type="text" id="VLAEname" placeholder="VLAE Name">
+                      <p style="font-size:12px;color:rgb(180, 180, 180); margin-left:17em;margin-bottom:1em;">
+                        Please name your vLAE. The same name will be used to order Applications.<br>
+                        vLAE Name must be:<br>
+                        - 3 to 16 characters.<br>
+                        - Begin with an alphabetic character.<br>
+                        - Only alphanumeric characters.<br>
+                        e.g. abc or abc12345<br>
+                      </p>
+                </div>
+                <div>
+              <label for="cluster">Cluster :</label>
+                <select  name="Cluster">
+                  <option value="None">------</option>
+                  <option value="Cisco IT">Cisco IT</option>
+                  <option value="GIS">GIS</option>
+                </select>
+                <p style="font-size:12px;color:rgb(180, 180, 180); margin-left:17em;margin-bottom:1em;">
+                  Please select a Cluster for your LAE.</p>
+              </div>
+              <div>
+            <label for="Mailer ">Group Mailer Alias :</label>
+             <input type="text" id="mailer" placeholder="Mailer alias">
+             <p style="font-size:12px;color:rgb(200, 200, 200);margin-left:17em;margin-bottom:1em;"> Enter mailer alias without '@cisco.com'</p>
+           </div>
+           <div>
+          <label for="ARU">Admin role user :</label>
+          <textarea name="message" rows="3" cols="80" id="ARU"></textarea>
+          <p style="font-size:12px;color:rgb(200, 200, 200);margin-left:17em;margin-bottom:1em;">
+              Please provide comma separated list of valid CEC User IDs.
+              These members have access to all features.</p>
+        </div>
+        <div>
+          <label for="ERU">Edit role user :</label>
+          <textarea name="message" rows="3" cols="80" id="ERU"></textarea>
+          <p style="font-size:12px;color:rgb(200, 200, 200);margin-left:17em;margin-bottom:1em;">
+            Please provide a comma separated list of valid CEC User IDs.<br>
+            These members can create, update, and delete all applications and lifecycles in the environment.</p>
+        </div>
+        <div>
+          <label for="VRU">Edit role user :</label>
+          <textarea name="message" rows="3" cols="80" id="VRU"></textarea>
+          <p style="font-size:12px;color:rgb(200, 200, 200);margin-left:17em;margin-bottom:1em;">
+            Please provide a comma separated list of valid CEC User IDs.<br>
+            These members have read-only access to view information about the environment and applications and cannot make any changes.</p>
+        <div>
+        <div>
+          <button type="button" class="btn btn-info" onclick="val()">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
