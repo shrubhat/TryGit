@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron container">
+          <h4 style="font-size:20px; font-family:Arial black;text-align:center;"> Please Enter the following details</h4>
+    </div>
+    <div class="container">
+          <div class="row">
+              <div class="col-md-8">
+                    <form action="js2.html" onsubmit="return clickon()" >
+                        <div class="form-group">
+                            <label for="First Name:">First Name</label>
+                            <input type="text" name="fn" id="fn" placeholder="First Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                              <label for="Last Name:">Last Name</label>
+                              <input type="text" name="ln" id="ln" placeholder="last Name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-success">Submit</button>
+                          <p id="demo" style="font-size:20px; font-family:Arial black;text-align:center;"></p>
+                        </div>
+                  </form>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function clickon()
+        {
+          var fn=document.getElementById('fn').value;
+          var ln=document.getElementById('ln').value;
+          return (fn+" "+ln);
+
+        }
+    </script>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

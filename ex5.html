@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>ex5</title>
+  </head>
+  <body>
+    <p>first paragraph</p>
+    <h1>headding</h1>
+    <!-- <button type="button" onclick="document.write('5+7');">try it</button> -->
+    <!-- <script type="text/javascript">
+       document.getElementById('hd').innerHTML="(5+7)"
+      document.write(7+3);
+    </script>  -->
+    <form onsubmit="return addition()">
+      A: <input type="text" name="a" id="a">
+      B: <input type="text" name="b" id="b">
+            <input type="submit" value="submit">
+    </form>
+    <script>
+      function addition()
+      {
+        var a=document.getElementById('a').value;
+        var b=document.getElementById('b').value;
+        document.write(Number(a)+Number(b));
+      }
+    </script>
+  </body>
+</html>
