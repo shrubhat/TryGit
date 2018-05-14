@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            window.jQuery || document.write('<script src="C:\Users\shrutbha\gitrepoEX\jquery-3.3.1.js"><\/script>')
+        </script>
+
+        <script type= "text/javascript">
+            $(document).ready(function(){
+            //   var para =  $('p');//Add CDN
+            //     alert("total number of paragraph tags are"+para.length);
+            //   var divs = $('div');
+            //     alert("Total number of div tags are"+divs.length);
+              $('p').css('color' , 'blue');
+              $('#signup').css( 'background-color' , 'grey');//'color' , 'green', 'padding' , '1px', multple style is not working!!!!!
+                
+            });
+             
+        </script>
+    </head>
+    <body>
+        <p>Jquery first example</p>
+
+        <p>enter your user name and password</p>  
+        <p>Please!!!</p>
+        <div id="login">
+                <form action ="">
+                    User Name:<input type="text" id="username">
+                    Password: <input type="password" id="pwd">
+                    <input type="submit" value="Submit">
+                </form>
+            </div><br />
+            <div id="signup">
+                    <form action ="">
+                        User Name:<input type="text" id="username">
+                        Password: <input type="password" id="pwd">
+                        Confirm Password: <input type="password" id="pwd">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+    </body>
+</html>
