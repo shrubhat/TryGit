@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <script>
+            let sum = 0;
+            
+            while (true) {
+                let value = +prompt("Enter a number", '');// '+' at the beginning converts the value to number
+                if (!value) break; // if(value == +"") wil take strings and give op as NaN 
+                sum += value;
+            }
+            alert( 'Sum: ' + sum );
+        </script>
+    </body>
+</html>

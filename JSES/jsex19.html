@@ -1,0 +1,20 @@
+<html>
+    <body onload="return welcome()">
+        <script>
+            // let age = prompt("What is your age ? " , 18);
+
+            // let welcome = (age >= 18) ? () => alert("Welcome to our site") : () => alert("you are not eligible");
+            function ask(question ,  yes , no){
+                if(confirm(question)) {yes()}
+                else{no()}
+            }
+
+            ask("your age is 100?", 
+            yes = () => alert("Yes I'm a ceturury old human!!"), 
+            no = () => alert("no, but I'll hit cetury!!"))
+
+            
+            
+        </script>
+    </body>
+</html>
