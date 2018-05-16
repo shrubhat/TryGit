@@ -17,8 +17,23 @@
             //   var divs = $('div');
             //     alert("Total number of div tags are"+divs.length);
               $('p').css('color' , 'blue');
-              $('#signup').css( 'background-color' , 'grey');//'color' , 'green', 'padding' , '1px', multple style is not working!!!!!
+              $('#signup').css( 'border ' , '10px solid grey');//'color' , 'green', 'padding' , '1px', multple style is not working!!!!!
+              // multiple value is working with single tag
+                $('.detail').css('color' , 'blue');
+                $('.detail').css('border' , 'solid blue');
+                $('p.detail').css('border' , 'solid green');
+
+             $(':input').each(function(){
+                //   var elm = $(this);
+                // alert(elm.val());
                 
+              });
+              $(document).ready(function(){
+                alert($('p:contains("enter")').html("just try to enter the value!!!!!!"));
+                ($('p:contains("Jquery")').css("background-color" , "red"));
+              });
+
+              
             });
              
         </script>
@@ -43,5 +58,23 @@
                         <input type="submit" value="Submit">
                     </form>
                 </div>
+                <br />
+                <div id="detail" class="detail">
+                        <form action ="" id = "detail">
+                            First Name:<input type="text" id="username" value="shruti">
+                            Last Name: <input type="text" id="lastname">
+                            City : <input type="text" id="city">
+                            State : <input type="text" id="state">
+                            <select>
+                                <option value="abc" >abc</option>
+                                <option value="def" selected = "true">def</option>
+                            </select>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <br /> <br />
+                    <p class="detail">
+                            paragraph content
+                    </p>
     </body>
 </html>
