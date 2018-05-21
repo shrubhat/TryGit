@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <div id = "elem">
+            <div id = "elem-element">
+                hello
+                <form id = "form1"> 
+                        <input type ="text" id ="name">
+                        <input type ="submit" value = "submit" onclick="alertvalue()">  
+                </form>
+            </div>
+        </div>
+        <script>
+            // alert(document.documentElement);
+            // alert(elem);
+            // alert(window.elem);
+            // alert(window['elem-element']);
+        //     function abc(){
+                    
+        //     document.getElementById('elem-element').style.fontSize = "30px";
+        //     document.getElementById('elem-element').style.color = "green";  
+        //    var z = document.getElementById('elem-element').nodeValue; 
+        //    var x=document.getElementById('name').value;
+        //   alert(z);
+        //    alert(x);
+        //     }
+            function  alertvalue(){
+                var a = document.getElementsByTagName('input');// try with ID=form1 and takes default 
+                //value if any in that tag or fill the value before the run of the function
+                for (let input of a){
+                        alert(input.value);
+                     }
+            }
+        
+        </script>
+    </body>
+</html>
