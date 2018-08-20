@@ -1,4 +1,11 @@
 function show_the_value(){
   var a =    document.getElementsByTagName('td');
-    a[0].innerHTML=10;
+    forEach(elem in a){
+        if (a[elem].click==true){
+            a[elem].nodeValue = "O";
+        }
+    } 
+       
+        
+    
 }

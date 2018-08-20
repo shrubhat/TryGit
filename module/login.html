@@ -1,43 +1,96 @@
+<!DOCTYPE html>
 <html>
   <head>
-      <title>PaaS User Guide</title>
-      <meta charset="utf-8">
+    <title>
+      Login
+    </title>
+    <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <style>
-             .button{
-              margin-left: 15em;
-              padding: 5px;
-              margin-top:2em;
-              margin-bottom: 5em;
-              background-color:#00ccff;
-              color: #ffffff;
-              border:none;
-              border-radius: 6px;
-              padding: 32px 16px;
-              width: 250px;
-              height:50px;
-
-          }
-      </style>
+      <script src="Validate_login.js"></script>
+    <style>
+      div{
+        margin: 10% auto;
+        width:fit-content;
+        height:fit-content;
+        text-align: center;
+        padding-top: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        border: 4px;
+        border-radius: 7px;
+        background-color: rgb(211, 218, 217);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        
+      }
+     input[type=text]{
+      padding: 8px 8px;
+      margin: 4px 0;
+      width:300px;
+      position:sticky;
+      border: none;
+      color:black;
+      border-radius: 4px;
+      cursor: pointer;
+      border-collapse: collapse;
+      font-size: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana;
+     }
+     input[type=password]{
+      padding: 8px 8px;
+      margin: 4px 0;
+      width:300px;
+      margin-bottom: 4%;
+      position: sticky;
+      border: none;
+      color:black;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana;
+     }
+     input[type=submit]{
+      padding: 8px 8px;
+      margin: 4px 0;
+      /* height: 40px; */
+      width:300px;
+      position: relative;
+      border: none;
+      color:white;
+      background-color: rgb(41, 204, 204);
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+     }
+     input[type=submit]:hover {
+      background-color: rgb(74, 221, 221);
+      }
+      input:focus{
+        border: 3px solid rgb(149, 248, 248);
+        border-radius: 4px;
+      }
+    label {
+       padding: 10px 10px 10px 0;
+       display: inline-block;
+    }
+    tab2 { padding-left: 2em; }
+    tab8 { padding-left: 8em; }
+    </style>
   </head>
   <body>
-    <div class="container">
-            <form >
-                   <label>User Name:</label> 
-                   <input type = "text" id = "uname"> 
-               
-                  <lable>Password:</lable> 
-                  <input type = "password" id = "pwd">
-
-                  <input type = "submit" class="button" value = "submit" onsubmit = "validate_input()">
-            </form>
-               
-      
-       
+    <div>
+      <form method="POST" action="index.html">
+        <label for="uname" ><strong>User Name</strong> </label><tab8></tab8><br/>
+        <input type="text" id="uname" required autocapitalize="off" autocorrect="off" autofocus="autofocus"><br>
+        <label for="pwd">Password <tab2><a href="resetpwd.html">Forgot password?</a></tab2> </label><br/>
+        <input type="password" id="pwd" required utocapitalize="off" autocorrect="off" autofocus="autofocus" ><br>
+        <input type="submit" value="Submit" onclick="Validate_login()"><br/>
+         <tab4><a href="signup.html">Sign UP?</a></tab4>     
+      </form>
     </div>
-    
   </body>
 </html>
