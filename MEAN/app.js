@@ -1,4 +1,1 @@
-require('./instanthello');
-var goodbye = require('./talk/goodbye');
-
-goodbye();
+console.log("it works")
